@@ -1,0 +1,120 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: aquamarine;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    background-color: darkblue;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+#board {
+    display: grid;
+    box-sizing: border-box;
+    grid: repeat(3, 160px) / repeat(3, 160px);
+}
+
+.cell {
+    border: 3px solid aquamarine;
+    box-sizing: border-box;
+}
+
+.no-left-border {
+    border-left-color: transparent;
+}
+
+.no-right-border {
+    border-right-color: transparent;
+}
+
+.no-top-border {
+    border-top-color: transparent;
+}
+
+.no-bottom-border {
+    border-bottom-color: transparent;
+}
+
+.square {
+    height: 100%;
+    width: 100%;
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.circle {
+    background-image: url(images/empty-circle-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.cross {
+    background-image: url(images/cross-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 2rem;
+    color: darkblue;
+    font-weight: bold;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#controls>input {
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 15px;
+    max-width: 280px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#controls>button {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: white;
+    color: darkblue;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
