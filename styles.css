@@ -4,6 +4,7 @@ body {
     padding: 0;
     border: 0;
     background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header {
@@ -11,8 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     color: darkblue;
-    font-size: 2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
 }
 
 .main {
@@ -80,8 +80,8 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 20px;
-    gap: 20px;
+    padding: 25px;
+    gap: 25px;
     font-size: 2rem;
     color: darkblue;
     font-weight: bold;

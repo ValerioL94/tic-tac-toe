@@ -61,10 +61,10 @@ const Game = (() => {
 
         if (checkForWin(GameBoard.getBoard(), players[currentPlayerIndex].sign)) {
             gameOver = true;
-            displayResult.renderMessage(`${players[currentPlayerIndex].name} wins!`)
+            displayResult.renderMessage(`${players[currentPlayerIndex].name} WINS!`)
         } else if (checkForTie(GameBoard.getBoard())) {
             gameOver = true;
-            displayResult.renderMessage("It's a tie!")
+            displayResult.renderMessage("IT'S A TIE!")
         }
 
         currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
