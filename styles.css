@@ -114,7 +114,8 @@ body {
     font-weight: bold;
 }
 
-button:hover {
+button:hover,
+button:focus {
     cursor: pointer;
     transition: all .2s ease-in-out;
     transform: scale(1.1);
